@@ -21,7 +21,7 @@ app.post('/', async (req, res) => {
       model: 'llama3.2',
       messages: [{ role: 'user', content: message }],
     })
-    res.status(200).json({ response: response.message.content })
+   res.status(200).json({ response: response.message.content })
   } catch (error) {
     res.status(500).send('Error occurred while fetching response')
   }
