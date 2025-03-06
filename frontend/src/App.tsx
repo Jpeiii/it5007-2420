@@ -1,35 +1,43 @@
 import * as React from "react";
 import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-import Link from "@mui/material/Link";
-
-function Copyright() {
-  return (
-    <Typography
-      variant="body2"
-      align="center"
-      sx={{
-        color: "text.secondary",
-      }}
-    >
-      {"Copyright © "}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{" "}
-      {new Date().getFullYear()}.
-    </Typography>
-  );
-}
+import { Box, Button, Typography } from "@mui/material";
 
 export default function App() {
+  const [message, setMessage] = React.useState("testing");
+  const handleSubmit = async () => {
+    console.log("Button clicked");
+    try {
+      const response = await fetch("http://127.0.0.1:8000/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ message: "Where is Singapore" }),
+      });
+      const data = await response.json();
+      setMessage(data.response);
+    } catch (error) {
+      console.error("Error posting to server:", error);
+    }
+  };
   return (
-    <Container maxWidth="sm">
-      <Box sx={{ my: 4 }}>
+    <Container
+      maxWidth="sm"
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        height: "100vh",
+      }}
+    >
+      <Box sx={{ my: 4, textAlign: "center" }}>
         <Typography variant="h4" component="h1" sx={{ mb: 2 }}>
-          Material UI Create React App example in TypeScript
+          {message}
         </Typography>
-        <Copyright />
+        <Button variant="text" onClick={handleSubmit}>
+          Text
+        </Button>
       </Box>
     </Container>
   );
