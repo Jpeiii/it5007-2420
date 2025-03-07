@@ -14,9 +14,8 @@ app.use(express.json());
 
 app.post('/', async (req, res) => {
   try {
-   
-   
     const { message } = req.body
+    console.log("receiving message", message)
     const response = await ollama.chat({
       model: 'llama3.2',
       messages: [{ role: 'user', content: message }],
