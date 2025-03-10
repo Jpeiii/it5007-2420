@@ -1,14 +1,15 @@
 # IT5007_2420 HandsOn
 
 # Agenda
+
 1. Introduction
 2. Setting Up and Testing Ollama Locally
 3. Hands-on Workshop: Building a Multimodal Application (Chatbot & Vison tool)
 
-
 ## Getting started
 
 ### Prerequisite
+
 Before proceeding with the installation, ensure you have the following installed:
 
 1. JavaScript
@@ -16,6 +17,7 @@ Before proceeding with the installation, ensure you have the following installed
 3. Ollama
 
 ### Installing for Ollama
+
 To install Ollama, follow these steps:
 
 Visit the official website: Ollama Downloads
@@ -43,6 +45,7 @@ If the installation is successful, your output should resemble the final image.
 ![step 4](assets/photo-4.png)
 
 ### Setup for application
+
 Follow the steps below to set up and run the application.
 
 1. Start the Frontend
@@ -68,4 +71,6 @@ npm run start # Start the backend server
 > [!NOTE]
 > You only need to run _npm install_ once during setup. Next time, you can start the application by running _npm run start_ in both the frontend and backend directories.
 
+### Demo Video
 
+![demo](assets/demo.mp4)
