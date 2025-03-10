@@ -42,7 +42,7 @@ If the installation is successful, your output should resemble the final image.
 **Step 4**
 ![step 4](assets/photo-4.png)
 
-### Setup for applcation
+### Setup for application
 Follow the steps below to set up and run the application.
 
 1. Start the Frontend
@@ -67,3 +67,5 @@ npm run start # Start the backend server
 
 > [!NOTE]
 > You only need to run _npm install_ once during setup. Next time, you can start the application by running _npm run start_ in both the frontend and backend directories.
+
+
