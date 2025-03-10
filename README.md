@@ -11,26 +11,34 @@
 ### Prerequisite
 Before proceeding with the installation, ensure you have the following installed:
 
-JavaScript
-npm
-Ollama
+1. JavaScript
+2. npm
+3. Ollama
 
 ### Installing for Ollama
 To install Ollama, follow these steps:
 
 Visit the official website: Ollama Downloads
+
 Download the appropriate version for your operating system.
 
 ![ollama](assets/ollama_download.png)
 
 Installation Steps
-The images below demonstrate the step-by-step installation process. If the installation is successful, your output should resemble the final image.
+The images below demonstrate the step-by-step installation process.
+
+If the installation is successful, your output should resemble the final image.
+
 **Step 1**
+
 ![step 1](assets/photo-1.png)
+
 **Step 2**
 ![step 2](assets/photo-2.png)
+
 **Step 3**
 ![step 3](assets/photo-3.png)
+
 **Step 4**
 ![step 4](assets/photo-4.png)
 
@@ -38,6 +46,7 @@ The images below demonstrate the step-by-step installation process. If the insta
 Follow the steps below to set up and run the application.
 
 1. Start the Frontend
+
 Run the following commands in your terminal:
 
 ```
@@ -47,7 +56,9 @@ npm run start # Start the frontend development server
 ```
 
 2. Start the Backend
+
 In a new terminal window, navigate to the backend directory and start the server:
+
 ```
 cd {root_dir}/backend/
 npm install   # Install dependencies
