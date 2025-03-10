@@ -6,11 +6,17 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.4.7",
+    "@mui/material": "^6.4.7",
+    "@mui/styled-engine-sc": "^6.4.6",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "@uppy/core": "^4.4.2",
+    "@uppy/dashboard": "^4.3.2",
     "react": "latest",
     "react-dom": "latest",
     "react-scripts": "latest",
+    "styled-components": "^6.1.15",
     "typescript": "latest"
   },
   "scripts": {

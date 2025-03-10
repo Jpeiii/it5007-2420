@@ -73,7 +73,7 @@ export default function AIChatbot() {
 
   const handleQuery = async (query: String) => {
     try {
-      const response = await fetch("http://127.0.0.1:8000/", {
+      const response = await fetch("http://127.0.0.1:8000/chatbot", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -126,6 +126,7 @@ export default function AIChatbot() {
                   wordWrap: "break-word",
                   maxHeight: "20vh",
                   overflowY: "auto",
+                  textAlign: "justify",
                 }}
               >
                 {msg.text}
