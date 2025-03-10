@@ -1,7 +1,6 @@
 import { Ollama } from 'ollama'
 import express from 'express'
 import cors from 'cors'
-import fetch from 'node-fetch';
 
 const ollama = new Ollama({ host: 'http://127.0.0.1:11434' })
 
