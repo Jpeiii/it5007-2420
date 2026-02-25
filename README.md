@@ -71,6 +71,3 @@ npm run start # Start the backend server
 > [!NOTE]
 > You only need to run _npm install_ once during setup. Next time, you can start the application by running _npm run start_ in both the frontend and backend directories.
 
-### Demo Video
-
-![demo](assets/demo.mp4)
